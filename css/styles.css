@@ -1,0 +1,252 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+#alignRight {
+	margin-left:auto; 
+	margin-right:0px;
+	float:right;
+}
+
+#progressBar {
+	display: none;
+}
+
+/* Hover Box */
+.help {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    display: none;
+    opacity: 0.9;
+    padding: 10px;
+    z-index: 100;
+}
+
+.help_link:hover + span {
+    display: inline;
+}
+
+
+/* Contact Form */
+#feedback-page{
+	text-align:center;
+}
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+  margin-top:30px;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #E74C3C;
+	color: #E74C3C;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	line-height: 150%;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 98%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #555;
+	color:white;
+	font-size:24px;
+	padding-top:10px;
+	padding-bottom:10px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #E74C3C;
+}
+	
+.submit:hover {
+	color: #E74C3C;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+/* Cloud */
+body {
+
+   background-position: right bottom; /*Positioning*/
+   background-repeat: no-repeat; /*Prevent showing multiple background images*/
+}
+#cloud {
+	width: 350px; height: 120px;
+	
+	background: #f2f9fe;
+	background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	float: right;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	
+	position: relative;
+	margin: 120px auto 20px;
+}
+
+#cloud:after, #cloud:before {
+	content: '';
+	position: absolute;
+	background: #f2f9fe;
+	z-index: -1
+}
+
+#cloud:after {
+	width: 100px; height: 100px;
+	top: -50px; left: 50px;
+	
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+#cloud:before {
+	width: 180px; height: 180px;
+	top: -90px; right: 50px;
+	
+	border-radius: 200px;
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+}
+
+.shadow {
+	width: 350px;
+	position: absolute; bottom: -10px; 
+	background: #000;
+	z-index: -1;
+	
+	box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+	
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
